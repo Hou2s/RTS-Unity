@@ -58,10 +58,46 @@ public class EscMenu : MonoBehaviour
 
     public void OnEscButtonClick()
     {
+        /* if (isEscMenuActive == false)
+         {
+             Sfx.Instance.PlaySound(bttnClickSound);
+             escFade.enabled = true;
+             escFade.Play("escMenuFade");
+             isEscMenuActive = true;
+         }
+
+         else
+         {
+             Sfx.Instance.PlaySound(bttnClickSound);
+             escFade.SetTrigger("End");
+             isEscMenuActive = false;
+         }
+        */
         Sfx.Instance.PlaySound(bttnClickSound);
-        escFade.enabled = true;       
-        escFade.Play("escMenuFade");
-        isEscMenuActive = true;
+
+        if (optionsPanel.activeSelf == false)
+        {
+            if (isEscMenuActive == false)
+            {
+                escFade.enabled = true;
+                Debug.Log("hiii");
+                escFade.Play("escMenuFade");
+                isEscMenuActive = true;
+
+            }
+            else if (isEscMenuActive == true)
+            {
+                Debug.Log("hiii2");
+                escFade.SetTrigger("End");
+                isEscMenuActive = false;
+            }
+
+        }
+        if (optionsPanel.activeSelf == true)
+        {
+            OnBackButtonClick();
+        }
+
     }
 
     public void ReturnToMainMenu()

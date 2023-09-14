@@ -3816,14 +3816,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Basically rock paper scissors but cooler
+  m_text: 'Rock beats Saw
 
-    hahah
+    Tree beats Rock
 
-    lol
+    Saw beats Tree
 
-    win
-    by scoring 3'
+
+    Win by scoring
+    1 point with each of the objects, or by scoring 3 points with one of the three
+    objects.
+
+
+    In Classic mode, when you lose a round, you will lose 1 point
+    with the item you used.
+
+
+    Your score will be updated on the bottom right
+    corner.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
